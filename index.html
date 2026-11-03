@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sabrina Carpenter Albums Review</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    
+
+         <header class="header">
+    <img class="header-logo" src="img (index)/sabrinacarpenterlogo.png" alt="SC logo">
+    <h1 class="script-title">Sabrina<br>Carpenter</h1>
+    <img class="header-logo" src="img (index)/sabrinacarpenterlogo.png" alt="SC logo">
+  </header>
+
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <span>music review</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>music review</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>music review</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>music review</span><span class="heart">&#9829;&#xFE0E;</span>
+      </div>
+      <!-- identical copy so the loop is seamless -->
+      <div class="marquee-group" aria-hidden="true">
+        <span>music review</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>music review</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>music review</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>music review</span><span class="heart">&#9829;&#xFE0E;</span>
+      </div>
+    </div>
+  </div>
+
+
+  <nav class="hearts">
+  <a href="shortnsweet.html"><img src="img (index)/snsbutton.png" alt="Short n Sweet"></a>
+  <a href="fruitcake.html"><img src="img (index)/fcbutton.png" alt="Fruit Cake"></a>
+  <a href="eics.html"><img src="img (index)/eicsbutton.png" alt="Emails I Can't Send"></a>
+</nav>
+
+
+  <section class="about" id="about Sabrina">
+    <div class="about-heading">
+      <img class="about-logo" src="img (index)/sabrinacarpenterlogo.png" alt="SC logo">
+      <h2 class="script-title">about...</h2>
+      <img class="about-logo" src="img (index)/sabrinacarpenterlogo.png" alt="SC logo">
+    </div>
+
+    <div class="about-cards">
+      <div class="card">
+        <img src="img (index)/hpimg1.png" alt="Homepage image 1">
+        <h3 class="script-title">Sabrina</h3>
+        <div class="description">Sabrina Carpenter is a 27 year old pop-artist. She was born in Quakertown, Pennsylvania on May 11th. Her first big role was playing Maya in the Disney Channel show Girls Meets world. She released her first album when she was just 15. She showed up in more movies and shows, and kept releasing more music, slowly gaining popularity. In April 11 2024 she released her biggest song Espresso which skyrocketed her career.</div>
+      </div>
+      <div class="card">
+        <img src="img (index)/hpimg2.png" alt="Homepage image 2">
+        <h3 class="script-title">her albums</h3>
+        <div class="description">Sabrina currently has 8 albums. Eyes wide open 2015, EVOlution 2016, Singular Act I: 2018, Singular Act II: 2019, Emails I can’t send 2022, Fruit Cake 2023, Short n Sweet 2024, Man's best friend 2026. They are all in the pop-genre and show her growth over the years. Fun fact, my older sister and I are OG Sabrina fans and used to sit in our dads office and listen to her first album and record covers.</div>
+      </div>
+      <div class="card">
+        <img src="img (index)/hpimg3.png" alt="Homepage image 3">
+        <h3 class="script-title">this site</h3>
+        <div class="description">This site is a deep dive into my personal 3 favorite albums from her; Emails I can't send, Fruit Cake, and Short n Sweet. We will deep dive into overall aesthetic, album design, and music analysis. You'll see that all of these albums are unique and beautiful in their own way, and by the end of this I gaurentee you will find a new fav song.</div>
+      </div>
+    </div>
+  </section>
+
+  <audio id="bgmusic" src="audio/espresso.mp3" loop></audio>
+<button id="music-toggle">♪ Play music</button>
+
+<script>
+  const music = document.getElementById("bgmusic");
+  const toggle = document.getElementById("music-toggle");
+
+  toggle.addEventListener("click", () => {
+    if (music.paused) {
+      music.play();
+      toggle.textContent = "❚❚ Pause music";
+    } else {
+      music.pause();
+      toggle.textContent = "♪ Play music";
+    }
+  });
+</script>
+
+
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>emails i cant send</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="eicsstyle.css">
+    </head>
+    <body>
+     <a class="back-link" href="index.html">&larr; Home</a>
+
+  <h1 class="page-title">emails i can't send</h1>
+
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <span>emotional</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>love</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>romance</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>longing</span><span class="heart">&#9829;&#xFE0E;</span>
+      </div>
+      <!-- identical copy so the loop is seamless -->
+      <div class="marquee-group" aria-hidden="true">
+        <span>emotional</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>love</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>romance</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>longing</span><span class="heart">&#9829;&#xFE0E;</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="row vibe">
+    <img class="photo" src="img (eics)/eicsimg1.png" alt="emails i can't send image 1">
+    <div class="text-block">
+      <h2>overall vibe</h2>
+      <p>Sabrina Carpenter’s emails i can’t send fwd: has an emotional, honest, and slightly chaotic pop vibe that explores the ups and downs of relationships, heartbreak, self-discovery, and growing up. The album blends catchy, upbeat pop sounds with more vulnerable and personal lyrics, creating a balance between fun, confidence, and emotional depth. Sabrina's playful personality and sarcastic sense of humor shine through, even when she is singing about difficult or uncomfortable experiences. Overall, the album feels like reading someone's private diary or late-night text messages, filled with messy feelings, relatable experiences, romantic drama, and moments of self-reflection. It's a mix of heartbreak and humor that feels both personal and effortlessly cool.</p>
+    </div>
+  </section>
+
+ 
+  <section class="row songs">
+    <div class="text-block">
+      <h2>standout songs</h2>
+      <p>lonesome</p>
+      <p>tornado warnings</p>
+      <p>decode</p>
+    </div>
+    <video src="img (eics)/eicsrecord.webm" autoplay loop muted playsinline></video>
+  </section>
+
+  
+  <h2 class="design-title">design/aesthetic</h2>
+
+  <section class="row design-top">
+    <img class="photo" src="img (eics)/eicsimg2.png" alt="emails i can't send image 2">
+    <div class="text-block">
+      <p>The overall design of Sabrina Carpenter’s emails i can’t send fwd: has a simple, intimate, and slightly nostalgic aesthetic. The album cover features Sabrina sitting on a bed in a black slip dress, surrounded by soft lighting and a minimal bedroom setting. The photography feels natural and effortless, almost like a personal snapshot rather than a heavily staged photoshoot. The use of muted colours, including soft blues, reds, and neutral tones, creates a dreamy and slightly moody atmosphere. The simple styling and relaxed composition give the artwork a timeless feel, while also reflecting the personal and vulnerable nature of the album.</p>
+    </div>
+  </section>
+
+  <section class="row design-bottom">
+    <div class="text-block">
+      <p>The overall aesthetic connects closely to the album's concept of unsent emails, private thoughts, and unspoken feelings. Its design has a subtle early-2000s influence, with a mix of feminine, romantic, and understated elements. The fwd: edition continues the original album's visual identity, making the deluxe version feel like an extension of the same personal story rather than an entirely new era. Overall, the design feels effortlessly cool, nostalgic, and intimate, almost as if listeners are getting a glimpse into Sabrina's personal life and private world.</p>
+    </div>
+    <img class="photo" src="img (eics)/eicsimg3.png" alt="emails i can't send image 3">
+  </section>
+
+  
+  <audio id="bgmusic" src="Audio/eicslonesome.mp3" loop autoplay></audio>
+  <button id="music-toggle">♪ Play music</button>
+
+  <script>
+    const music = document.getElementById("bgmusic");
+    const toggle = document.getElementById("music-toggle");
+
+    function updateButton() {
+      toggle.textContent = music.paused ? "♪ Play music" : "❚❚ Pause music";
+    }
+
+    music.addEventListener("play", updateButton);
+    music.addEventListener("pause", updateButton);
+
+    toggle.addEventListener("click", () => {
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    });
+
+    
+    music.play().catch(() => {});
+    updateButton();
+  </script>
+
+</body>
+</html>
+
+      
+        <script src="" async defer></script>
+    </body>
+</html>
+
+    
+    </body>
+</html>

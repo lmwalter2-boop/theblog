@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>short n sweet review</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="snsstyle.css">
+    </head>
+    <body>
+       <a class="back-link" href="index.html">&larr; Home</a>
+
+  <h1 class="page-title">SHORT N' SWEET</h1>
+
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <span>PLAYFUL</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>CATCHY</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>CONFIDENT</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>RAUNCHY</span><span class="heart">&#9829;&#xFE0E;</span>
+      </div>
+      <!-- identical copy so the loop is seamless -->
+      <div class="marquee-group" aria-hidden="true">
+        <span>PLAYFUL</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>CATCHY</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>CONFIDENT</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>RAUNCHY</span><span class="heart">&#9829;&#xFE0E;</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="row vibe">
+    <img class="photo" src="img (sns)/snsimg1.png" alt="Short n Sweet image 1">
+    <div class="text-block">
+      <h2>OVERALL VIBE</h2>
+      <p>Sabrina Carpenter’s Short n’ Sweet has a playful, flirty, and confident vibe that mixes fun pop energy with a little bit of heartbreak. The album feels lighthearted and cheeky, with witty lyrics, catchy melodies, and a mix of humor and emotional honesty. Overall, it captures the excitement and messiness of dating, balancing sweet, dreamy moments with sass, sarcasm, and a touch of vulnerability.</p>
+    </div>
+  </section>
+
+ 
+  <section class="row songs">
+    <div class="text-block">
+      <h2>STANDOUT SONGS</h2>
+      <p>Taste</p>
+      <p>Coincidence</p>
+      <p>Dumb and Poetic</p>
+    </div>
+    <video src="img (sns)/shortnsweetrecord.webm" autoplay loop muted playsinline></video>
+  </section>
+
+  
+  <h2 class="design-title">DESIGN/AESTHETIC</h2>
+
+  <section class="row design-top">
+    <img class="photo" src="img (sns)/snsimg2.png" alt="Short n Sweet image 2">
+    <div class="text-block">
+      <p>Sabrina Carpenter’s Short n’ Sweet has a very feminine, flirty, and retro-inspired aesthetic that combines modern pop with vintage Hollywood glamour. The overall look is playful and glamorous, with elements of 1960s pin-up imagery, soft pastel colors, baby-doll outfits, and bold, feminine styling. This aesthetic reflects the album’s personality, which is sweet and romantic on the surface but also confident, cheeky, and a little sarcastic. The visuals help create a fun, recognizable identity that matches the album’s catchy pop sound and witty lyrics.</p>
+    </div>
+  </section>
+
+  <section class="row design-bottom">
+    <div class="text-block">
+      <p>The album cover features Sabrina against a bright blue background, with a red lipstick kiss mark on her shoulder. The contrast between the blue background and the red lipstick makes the cover stand out, while the close-up pose gives it a glamorous, editorial feel. The design is relatively simple, keeping the focus on Sabrina rather than using lots of extra graphics or details. Across the album’s wider design, promotional images, typography, outfits, and merchandise continue the vintage-inspired, feminine theme, creating a cohesive visual identity. </p>
+    </div>
+    <img class="photo" src="img (sns)/snsimg3.png" alt="Short n Sweet image 3">
+  </section>
+
+  
+  <audio id="bgmusic" src="Audio/taste.mp3" loop autoplay></audio>
+  <button id="music-toggle">♪ Play music</button>
+
+  <script>
+    const music = document.getElementById("bgmusic");
+    const toggle = document.getElementById("music-toggle");
+
+    function updateButton() {
+      toggle.textContent = music.paused ? "♪ Play music" : "❚❚ Pause music";
+    }
+
+    music.addEventListener("play", updateButton);
+    music.addEventListener("pause", updateButton);
+
+    toggle.addEventListener("click", () => {
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    });
+
+    
+    music.play().catch(() => {});
+    updateButton();
+  </script>
+
+</body>
+</html>
+
+
+        
+      
+        <script src="" async defer></script>
+    </body>
+</html>

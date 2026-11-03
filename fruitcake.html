@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fruit Cake</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="fcstyle.css">
+    </head>
+     <body>
+       <a class="back-link" href="index.html">&larr; Home</a>
+
+  <h1 class="page-title">Fruit Cake</h1>
+
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <span>cheeky</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>christmas</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>fun</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>soft</span><span class="heart">&#9829;&#xFE0E;</span>
+      </div>
+      <!-- identical copy so the loop is seamless -->
+      <div class="marquee-group" aria-hidden="true">
+        <span>cheeky</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>christmas</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>fun</span><span class="heart">&#9829;&#xFE0E;</span>
+        <span>soft</span><span class="heart">&#9829;&#xFE0E;</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="row vibe">
+    <img class="photo" src="img (fc)/fcimg1.png" alt="Fruit Cake image 1">
+    <div class="text-block">
+      <h2>overall vibe</h2>
+      <p>Sabrina Carpenter’s Fruitcake has a fun, playful, and festive vibe that perfectly captures the excitement and chaos of the holiday season. The album mixes catchy pop melodies with cheeky lyrics, humor, and a little bit of sass, giving traditional Christmas music a fresh and modern twist. Each song has its own personality, balancing sweet, cozy holiday feelings with Sabrina’s signature flirty and mischievous energy. Overall, Fruitcake feels like a Christmas party filled with glitter, romance, humor, and a touch of chaos, making it the perfect soundtrack for anyone who loves the holidays but wants something a little less traditional and more fun</p>
+    </div>
+  </section>
+
+ 
+  <section class="row songs">
+    <div class="text-block">
+      <h2>standout songs</h2>
+      <p>buy me presents</p>
+      <p>is it new years yet?</p>
+      <p>cindy lou who</p>
+    </div>
+    <video src="img (fc)/fruitcakerecord.webm" autoplay loop muted playsinline></video>
+  </section>
+
+  
+  <h2 class="design-title">design/aesthetic</h2>
+
+  <section class="row design-top">
+    <img class="photo" src="img (fc)/fcimg2.png" alt="Fruit Cake image 2">
+    <div class="text-block">
+      <p>The design of Sabrina Carpenter’s Fruitcake has a very nostalgic, playful, and vintage Christmas aesthetic. The album cover features Sabrina holding a fruitcake up to her face, wearing a red top with a white heart pattern and a white headband. The soft beige background, festive red details, and styling give the artwork a retro holiday feel, almost like an old-fashioned Christmas advertisement or a vintage holiday magazine. The overall colour palette is warm and festive, using traditional Christmas-inspired colours while keeping the design cute, feminine, and slightly quirky.</p>
+    </div>
+  </section>
+
+  <section class="row design-bottom">
+    <div class="text-block">
+      <p>The overall design feels very intentional because it connects the album's title, music, and personality into one cohesive visual concept. The vintage-inspired artwork gives it a homemade, cozy Christmas feeling, while Sabrina's playful styling adds a modern pop twist. Even the physical vinyl editions complement this aesthetic, with festive green and fruit-punch purple colour options that make the album feel like a holiday collectible. Overall, the design captures a mix of retro Christmas nostalgia, girly charm, and Sabrina's signature sense of humor, making Fruitcake feel like a fun and slightly unconventional holiday gift</p>
+    </div>
+    <img class="photo" src="img (fc)/fcimg3.png" alt="Fruit Cake image 3">
+  </section>
+
+  
+  <audio id="bgmusic" src="Audio/fc.mp3" loop autoplay></audio>
+  <button id="music-toggle">♪ Play music</button>
+
+  <script>
+    const music = document.getElementById("bgmusic");
+    const toggle = document.getElementById("music-toggle");
+
+    function updateButton() {
+      toggle.textContent = music.paused ? "♪ Play music" : "❚❚ Pause music";
+    }
+
+    music.addEventListener("play", updateButton);
+    music.addEventListener("pause", updateButton);
+
+    toggle.addEventListener("click", () => {
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    });
+
+    
+    music.play().catch(() => {});
+    updateButton();
+  </script>
+
+</body>
+</html>
+
+      
+        <script src="" async defer></script>
+    </body>
+</html>

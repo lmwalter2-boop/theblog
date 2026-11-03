@@ -1,0 +1,193 @@
+body {
+  background-color: #FDFFBA;
+}
+
+.buttons {
+    max-width: 30%;
+    display: flex;
+}
+
+
+
+@font-face {
+  font-family: "sabrinascript";
+  src: url("fonts/sabrinascript.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "sabrinascript";
+  src: url("sabrinascript.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FDFFBA;
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+  overflow-x: hidden;
+  padding-bottom: 4vw;
+}
+
+.script-title {
+  font-family: "sabrinascript", cursive;
+  font-weight: normal;
+  text-align: center;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.5vw 0 0;
+  height: 25vw;
+}
+
+.header-logo {
+  width: 17vw;
+  height: auto;
+}
+
+.header .script-title {
+  font-size: 8vw;
+  line-height: 0.85;
+}
+
+
+.marquee {
+  background: #D7F6FF;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 1vw;
+  padding: 1vw 0;
+}
+
+.marquee-track {
+  display: inline-flex;
+  animation: scroll-left 15s linear infinite;
+}
+
+.marquee-group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.marquee-group span {
+  font-size: 6.5vw;
+  line-height: 1.2;
+}
+
+.marquee-group .heart {
+  font-size: 4vw;
+  margin: 0 1vw;
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+
+.hearts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6vw;
+  margin-top: 7vw;
+}
+
+.hearts img {
+  width: 30vw;
+  height: auto;
+  display: block;
+  transition: transform 180ms ease;
+}
+
+.hearts a:hover img,
+.hearts a:focus-visible img {
+  transform: scale(1.15);
+}
+
+
+.about-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2vw;
+}
+
+.about-logo {
+  width: 17vw;
+  height: auto;
+}
+
+.about-heading .script-title {
+  font-size: 8vw;
+  margin: 15vw;
+}
+
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2vw;
+  justify-items: center;
+  width: 100%;
+  margin: -10vw auto 0;
+  padding: 0 1vw;   
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+.card .script-title {
+  font-size: 3.5vw;
+  margin-top: 5vw;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.description {
+  background: #D7F6FF;
+  width: 100%;
+  max-width: 100%;
+  min-height: 12vw;      
+  padding: 1.5vw;
+  font-size: 1.3vw;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+#music-toggle {
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  background: #D7F6FF;
+  border: 2px solid #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.4vw;
+  padding: 0.8vw 1.4vw;
+  cursor: pointer;
+  z-index: 10;
+}

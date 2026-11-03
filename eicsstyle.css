@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "eics";
+  src: url("fonts/typewriter.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0d6bf;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  overflow-x: hidden;
+  position: relative;
+  padding-bottom: 5vw;
+}
+
+.back-link {
+  position: absolute;
+  top: 1.5vw;
+  left: 2vw;
+  color: #000000;
+  font-size: 2vw;
+  text-decoration: none;
+  z-index: 5;
+}
+
+h1, h2 {
+  font-family: "eics", sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 8.8vw;
+  line-height: 1.1;
+  padding-top: 4vw;
+  margin-bottom: 2vw;
+}
+
+
+.marquee {
+  background: #780404;
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0.5vw 0;
+}
+
+.marquee-track {
+  display: inline-flex;
+  animation: scroll-left 15s linear infinite;
+}
+
+.marquee-group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.marquee-group span {
+  font-family: "eics", sans-serif;
+  font-size: 6.5vw;
+  line-height: 1.2;
+  text-transform: lowercase;
+}
+
+.marquee-group .heart {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4vw;
+  margin: 0 1.5vw;
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  display: block;
+  height: auto;
+}
+
+.text-block {
+  text-align: center;
+}
+
+.text-block h2 {
+  font-size: 4.5vw;
+  line-height: 1.2;
+  margin-bottom: 0.5vw;
+}
+
+.text-block p {
+  font-size: 1.8vw;
+  line-height: 1.5;
+}
+
+
+.vibe {
+  margin-top: 12vw;
+  gap: 1vw;
+  align-items: flex-start;
+}
+
+.vibe .photo      { width: 52vw; }   
+.vibe .text-block { width: 36vw; }  
+
+
+.songs {
+  margin-top: 12vw;
+  gap: 1vw;
+  align-items: center;
+}
+
+.songs .text-block    { width: 37vw; }
+.songs .text-block h2 { font-size: 3.6vw; }
+
+.songs video {
+  width: 60vw;
+  height: auto;
+  display: block;
+}
+
+
+.design-title {
+  font-size: 5.6vw;
+  margin-top: 12vw;
+  margin-bottom: 6vw;
+}
+
+.design-top {
+  gap: 1vw;
+  align-items: flex-start;
+}
+
+.design-top .photo      { width: 52vw; }
+.design-top .text-block { width: 48vw; }
+
+.design-bottom {
+  gap: 1vw;
+  align-items: flex-end;
+  margin-top: -8vw;   
+}
+
+.design-bottom .text-block { width: 46.6vw; }
+.design-bottom .photo      { width: 52vw; }
+
+
+#music-toggle {
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  background: #780404;
+  color: #000;
+  border: 2px solid #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(12px, 1.4vw, 18px);
+  padding: 0.8vw 1.4vw;
+  cursor: pointer;
+  z-index: 10;
+}
